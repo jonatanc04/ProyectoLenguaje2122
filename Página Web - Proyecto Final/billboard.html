@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pops Cinema</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+	<link rel="icon" href="media/ico.png">
+	<script src="./tickets.js" type="module"></script>
+</head>
+<body>
+
+	<script src="./logout.js" type="module"></script>
+	
+	<video autoplay muted loop class="video">
+		<source src="media/back.mp4" type="video/mp4">
+	</video>
+
+	<div class="header">
+		<div class="inner_header">
+			<div class="logo_container">
+				<img src="media/logo.png"/>
+			</div>
+			<ul class="navigation">
+				<a href="inicio.html"><li>HOME</li></a>
+				<a href="contact.html" id="contact"><li>CONTACT</li></a>
+				<a href="billboard.html"><li>BILLBOARD</li></a>
+				<a href="login.html"><li id="logOutSame">LOGIN</li></a>
+				<script>
+					function movie (id) {
+						localStorage.movie = id;
+						window.location.href = "tickets.html";
+					}
+				</script>
+			</ul>
+		</div>
+	</div>
+
+	<div class="films">
+
+		<div class="zone">
+			<a href="#"><img class="film" src="media/strange.png"></a>
+			<p class="reserv">Make your <a>reservation</a> by...</p>
+			<p class="price" id="cost1">9.50</p>
+			<p class="divise">$/ud</p>
+			<a href="https://www.youtube.com/watch?v=aWzlQ2N6qqg"><button>Trailer</button></a>
+			<a href="tickets.html?priceMov=9.5" id="1" onclick="movie(1)"><button>Reservation</button></a>
+		</div>
+
+		<div class="zone">
+			<a href="#"><img class="film" src="media/sonic.png"></a>
+			<p class="reserv">Make your <a>reservation</a> by...</p>
+			<p class="price" id="cost2">5.00</p>
+			<p class="divise">$/ud</p>
+			<a href="https://www.youtube.com/watch?v=47r8FXYZWNU"><button>Trailer</button></a>
+			<a href="tickets.html?priceMov=5" id="2" onclick="movie(2)"><button>Reservation</button></a>
+		</div>
+
+		<div class="zone">
+			<a href="#"><img class="film" src="media/dumble.png"></a>
+			<p class="reserv">Make your <a>reservation</a> by...</p>
+			<p class="price" id="cost3">8.50</p>
+			<p class="divise">$/ud</p>
+			<a href="https://www.youtube.com/watch?v=DaM_wL1ZOM4"><button>Trailer</button></a>
+			<a href="tickets.html?priceMov=8.5" id="3" onclick="movie(3)"><button>Reservation</button></a>
+		</div>
+
+		<div class="zone">
+			<a href="#"><img class="film" src="media/llaves.png"></a>
+			<p class="reserv">Make your <a>reservation</a> by...</p>
+			<p class="price" id="cost4">9.50</p>
+			<p class="divise">$/ud</p>
+			<a href="https://www.youtube.com/watch?v=K2dgtjT_GLs"><button>Trailer</button></a>
+			<a href="tickets.html?priceMov=9.5" id="4" onclick="movie(4)"><button>Reservation</button></a>
+		</div>
+
+		<div class="zone">
+			<a href="#"><img class="film" src="media/alcarras.png"></a>
+			<p class="reserv">Make your <a>reservation</a> by...</p>
+			<p class="price" id="cost5">3.50</p>
+			<p class="divise">$/ud</p>
+			<a href="https://www.youtube.com/watch?v=XacARMle0ZY"><button>Trailer</button></a>
+			<a href="tickets.html?priceMov=3.5" id="5" onclick="movie(5)"><button>Reservation</button></a>
+		</div>
+
+		<div class="zone">
+			<a href="#"><img class="film" src="media/uncharted.png"></a>
+			<p class="reserv">Make your <a>reservation</a> by...</p>
+			<p class="price" id="cost6">8.00</p>
+			<p class="divise">$/ud</p>
+			<a href="https://www.youtube.com/watch?v=KaCLIROA26I"><button>Trailer</button></a>
+			<a href="tickets.html?priceMov=8" id="6" onclick="movie(6)"><button>Reservation</button></a>
+		</div>
+
+	</div>
+	
+	<div class="logo_container3">
+		<img src="media/logo.png"/>
+	</div>
+
+</body>
+</html>

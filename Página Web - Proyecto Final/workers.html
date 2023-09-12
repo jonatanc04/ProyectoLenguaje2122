@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pops Cinema</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+	<link rel="icon" href="media/ico.png">
+	<script src="./logout.js" type="module"></script>
+</head>
+
+<body>
+
+	<video autoplay muted loop class="video">
+		<source src="media/back.mp4" type="video/mp4">
+	</video>
+
+	<div class="header">
+		<div class="inner_header">
+			<div class="logo_container">
+				<img src="media/logo.png"/>
+			</div>
+			<ul class="navigation">
+				<a href="inicio.html"><li>HOME</li></a>
+				<a href="workers.html"><li>WORKERS</li></a>
+				<a href="billboard.html"><li>BILLBOARD</li></a>
+				<a href="login.html"><li id="logOutSame">LOGIN</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Contenedor con el login y el register -->
+
+	<div class="log_container2">
+
+        <form id="form_work" action="#">
+			<div class="register2">
+				<p class="title">WORKERS</p>
+				<p class="description">New workers here. Are you our boss? Sure?</p>
+
+				<div class="mini2">
+
+					<p class="intro">Username</p>
+					<input class="in2" type="text" id="userWork" name="username" placeholder="Enter an username">
+
+					<p class="intro">Email</p>
+					<input class="in2" type="text" id="mailWork" name="email" placeholder="Enter your email account">
+
+					<p class="intro">Password</p>
+					<input class="in2" type="password" id="passWork" name="password" placeholder="Enter your password">
+
+					<input class="button" id="work_safe" type="submit" value="New employee">
+
+				</div>
+
+			</div>
+		</form>
+
+	</div>
+
+	<script src="./workers.js" type="module"></script>
+
+</body>
+
+</html>

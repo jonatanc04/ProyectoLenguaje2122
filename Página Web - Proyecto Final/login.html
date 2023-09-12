@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pops Cinema</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+	<link rel="icon" href="media/ico.png">
+	<script src="./logout.js" type="module"></script>
+</head>
+
+<body>
+
+	<video autoplay muted loop class="video">
+		<source src="media/back.mp4" type="video/mp4">
+	</video>
+
+	<div class="header">
+		<div class="inner_header">
+			<div class="logo_container">
+				<img src="media/logo.png"/>
+			</div>
+			<ul class="navigation">
+				<a href="inicio.html"><li>HOME</li></a>
+				<a href="contact.html" id="contact"><li>CONTACT</li></a>
+				<a href="billboard.html"><li>BILLBOARD</li></a>
+				<a href="login.html"><li id="logOutSame">LOGIN</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Contenedor con el login y el register -->
+
+	<div class="log_container">
+		<form id="form_log" action="#" >
+			<div class="login">
+
+				<p class="title">LOG IN</p>
+				<p class="description">Do you have an account? Login here.</p>
+
+				<div class="mini">
+
+					<p class="intro">Username</p>
+					<input id="username" class="in" type="text" name="username" placeholder="Enter an username">
+
+					<p class="intro">Password</p>
+					<input id="password" class="in" type="password" name="password" placeholder="Enter your password">
+
+					<input class="button" id="log_safe" type="submit" value="Login">
+
+				</div>
+			</div>
+		</form>
+
+		<form id="form_reg" action="#">
+			<div class="register">
+				<p class="title">REGISTER</p>
+				<p class="description">You do not have an account? Create one here.</p>
+
+				<div class="mini2">
+
+					<p class="intro">Username</p>
+					<input class="in2" type="text" id="userReg" name="username" placeholder="Enter an username">
+
+					<p class="intro">Email</p>
+					<input class="in2" type="text" id="mailReg" name="email" placeholder="Enter your email account">
+
+					<p class="intro">Password</p>
+					<input class="in2" type="password" id="passReg" name="password" placeholder="Enter your password">
+
+					<input class="button" id="reg_safe" type="submit" value="Register">
+
+				</div>
+
+			</div>
+		</form>
+
+	</div>
+
+	<div class="logo_container4">
+		<img src="media/logo.png"/>
+	</div>
+
+	<script src="./index.js" type="module"></script>
+
+</body>
+
+</html>
